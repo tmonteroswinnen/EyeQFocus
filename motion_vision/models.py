@@ -2,13 +2,17 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 import core.models
 
+
 class Optotype(models.Model):
-    name = models.CharField(max_length=50)
-    description = models.TextField()
-    image = models.ImageField(upload_to='optotypes/')
+    optotype_id = models.CharField(max_length=50, unique=True)
+    optotype_char = models.CharField(max_length=5)
+    optotype_image = models.ImageField(upload_to='optotypes/', null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.optotype_id
+
+    class Meta:
+        ordering = ['optotype_id']
 
 
 class MotionVisionTest(models.Model):
