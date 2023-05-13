@@ -119,7 +119,7 @@ LANGUAGES = [
 
 # Optional: set the default locale for the server
 
-locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
+# locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
 
 
 TIME_ZONE = 'UTC'
