@@ -1,0 +1,81 @@
+{% load static %}
+
+<!-- Topbar Start -->
+<div class="navbar-custom">
+    <ul class="list-unstyled topnav-menu float-right mb-0">
+
+
+
+        <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#"
+                role="button" aria-haspopup="false" aria-expanded="false">
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                <!-- item-->
+                <div class="dropdown-header noti-title">
+                    <h6 class="text-overflow m-0">Bienvenido !</h6>
+                </div>
+
+                <!-- item-->
+                <a href="" class="dropdown-item notify-item">
+                    <i class="fe-user"></i>
+                    <span>Mi perfil</span>
+                </a>
+
+                <!-- item-->
+                <a href="" class="dropdown-item notify-item">
+                    <i class="fe-log-out"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+
+            </div>
+        </li>
+
+
+
+
+    </ul>
+<!-- LOGO -->
+    <div class="logo-box">
+        <a href="" class="logo text-center">
+            <span class="logo-lg">
+                <img src="{% static 'images/Eyeqfocus-lightblue.png' %}" alt="" height="50">
+            </span>
+            <span class="logo-sm">
+                <img src="{% static 'images/Eyeqfocus-lightblue.png' %}" alt="" height="24">
+            </span>
+        </a>
+    </div>
+<!-- LOGO
+<div class="logo-box">
+    <div class="logo-container mr-3">
+        <a href="" class="logo text-md-left ">
+            <span class="logo-lg-text-light ">
+            <img src="{% static 'images/EyeQFocus-lightblue.png' %}" alt="" height="50">
+            </span>
+        </a>
+    </div>
+</div>-->
+
+
+
+
+    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+        <li>
+            <button class="button-menu-mobile waves-effect waves-light">
+                <i class="fe-menu"></i>
+            </button>
+        </li>
+
+
+    </ul>
+</div>
+<!-- end Topbar -->
+
+{% block extra_javascript %}
+
+    <script src="{% static 'etc/vendor.min.js' %}"></script>
+
+
+{% endblock %}
