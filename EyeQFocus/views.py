@@ -7,4 +7,8 @@ def home(request):
 
 
 class TestView(TemplateView):
-    template_name = 'test.html'
+    template_name = 'index.html'
+
+
+class RedGreenView(TemplateView):
+    template_name = 'tests/red-green.html'
