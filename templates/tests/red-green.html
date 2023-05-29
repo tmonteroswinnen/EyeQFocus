@@ -50,7 +50,7 @@
                             </div>
                             <div class="button">
                                 <div class="text-center">
-                                    <img src="{% static 'images/test-circle.jpg' %}" id="fullscreen-image"
+                                    <img src="{% static 'images/placeholder.png' %}" id="fullscreen-image"
                                          alt="Imagen de marcador de posición"
                                          class="img-fluid fullscreen-image"
                                          style="max-width: 100px; max-height: 100px;"
@@ -81,7 +81,7 @@
  function toggleFullscreen(elementId) {
     var element = document.getElementById(elementId);
     if (!document.fullscreenElement) {
-        if (element.getAttribute('src') === '{% static 'images/test-circle.jpg' %}') {
+        if (element.getAttribute('src') === '{% static 'images/placeholder.png' %}') {
             element.setAttribute('src', '{% static 'images/red-green.png' %}');
         }
         element.requestFullscreen().catch(err => {
@@ -99,8 +99,8 @@
 document.addEventListener('fullscreenchange', function () {
     if (!document.fullscreenElement) {
         var fullscreenImage = document.getElementById('fullscreen-image');
-        if (fullscreenImage.getAttribute('src') !== '{% static 'images/test-circle.jpg' %}') {
-            fullscreenImage.setAttribute('src', '{% static 'images/test-circle.jpg' %}');
+        if (fullscreenImage.getAttribute('src') !== '{% static 'images/placeholder.png' %}') {
+            fullscreenImage.setAttribute('src', '{% static 'images/placeholder.png' %}');
         }
     }
 });
