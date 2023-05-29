@@ -38,6 +38,7 @@
                             <div class="ribbon ribbon-blue float-left">
                                 <i class="mdi mdi-access-point mr-1"></i> Test de visión Rojo-Verde
                             </div>
+
                             <div class="ribbon-content">
                                 <p class="mb-0">
                                     Evaluación que permite determinar la capacidad del paciente para distinguir los colores rojo y verde, lo cual ayuda a afinar la prescripción de gafas y mejorar la visión en general.
@@ -45,10 +46,11 @@
                                 <p class="mb-0">
                                     <br>
                                 </p>
+
                             </div>
                             <div class="button">
                                 <div class="text-center">
-                                    <img src="{% static 'images/placeholder.png' %}" id="fullscreen-image"
+                                    <img src="{% static 'images/test-circle.jpg' %}" id="fullscreen-image"
                                          alt="Imagen de marcador de posición"
                                          class="img-fluid fullscreen-image"
                                          style="max-width: 100px; max-height: 100px;"
@@ -79,7 +81,7 @@
  function toggleFullscreen(elementId) {
     var element = document.getElementById(elementId);
     if (!document.fullscreenElement) {
-        if (element.getAttribute('src') === '{% static 'images/placeholder.png' %}') {
+        if (element.getAttribute('src') === '{% static 'images/test-circle.jpg' %}') {
             element.setAttribute('src', '{% static 'images/red-green.png' %}');
         }
         element.requestFullscreen().catch(err => {
@@ -97,8 +99,8 @@
 document.addEventListener('fullscreenchange', function () {
     if (!document.fullscreenElement) {
         var fullscreenImage = document.getElementById('fullscreen-image');
-        if (fullscreenImage.getAttribute('src') !== '{% static 'images/placeholder.png' %}') {
-            fullscreenImage.setAttribute('src', '{% static 'images/placeholder.png' %}');
+        if (fullscreenImage.getAttribute('src') !== '{% static 'images/test-circle.jpg' %}') {
+            fullscreenImage.setAttribute('src', '{% static 'images/test-circle.jpg' %}');
         }
     }
 });

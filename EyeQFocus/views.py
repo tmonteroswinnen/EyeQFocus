@@ -12,3 +12,7 @@ class TestView(TemplateView):
 
 class RedGreenView(TemplateView):
     template_name = 'tests/red-green.html'
+
+
+class AstigmaticView(TemplateView):
+    template_name = 'tests/astigmatic.html'

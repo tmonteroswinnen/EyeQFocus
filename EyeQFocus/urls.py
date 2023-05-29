@@ -21,11 +21,14 @@ from . import views
 
 from EyeQFocus import settings
 from motion_vision import views as motion_vision_views
-from .views import TestView, RedGreenView
+from .views import TestView, RedGreenView, AstigmaticView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('motion_vision/', include('motion_vision.urls')),
     path('', TestView.as_view(), name='index'),
     path('tests/red-green.html', RedGreenView.as_view(), name='red-green'),
+    path('tests/astigmatic.html', AstigmaticView.as_view(), name='astigmatic'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
