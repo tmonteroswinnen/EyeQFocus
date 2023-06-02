@@ -21,7 +21,7 @@ from . import views
 
 from EyeQFocus import settings
 from motion_vision import views as motion_vision_views
-from .views import TestView, RedGreenView, AstigmaticView
+from .views import TestView, RedGreenView, AstigmaticView, FiguresView, generar_optotipo_ninos, ColorVisionView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +29,8 @@ urlpatterns = [
     path('', TestView.as_view(), name='index'),
     path('tests/red-green.html', RedGreenView.as_view(), name='red-green'),
     path('tests/astigmatic.html', AstigmaticView.as_view(), name='astigmatic'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('tests/figures.html', FiguresView.as_view(), name='figures'),
+    path('tests/color-vision.html', ColorVisionView.as_view(), name='color-vision'),
+    ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

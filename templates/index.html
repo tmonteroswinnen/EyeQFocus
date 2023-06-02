@@ -67,7 +67,7 @@
                     <div class="col-lg-6 col-xl-3">
                         <!-- Simple card -->
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="{% static 'images/1.png' %}" alt="Card image cap">
+                            <a href="{% url 'red-green' %}"><img class="card-img-top img-fluid" src="{% static 'images/1.png' %}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Test de visión rojo-verde</h5>
                                 <p class="card-text">Evaluación que permite determinar la capacidad del paciente para distinguir los colores rojo y verde, lo cual ayuda a afinar la prescripción de gafas y mejorar la visión en general.</p>
@@ -79,7 +79,7 @@
                     <div class="col-lg-6 col-xl-3">
                         <!-- Simple card -->
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="{% static 'images/2.png' %}" alt="Card image cap">
+                            <a href="{% url 'astigmatic' %}"><img class="card-img-top img-fluid" src="{% static 'images/2.png' %}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Test de astigmatismo</h5>
                                 <p class="card-text">Prueba que identifica y cuantifica la presencia de astigmatismo en los ojos. Utiliza un dispositivo con diales para medir las irregularidades en la curvatura de la córnea y determinar la corrección óptica necesaria.</p>
@@ -91,11 +91,11 @@
                     <div class="col-lg-6 col-xl-3">
                         <!-- Simple card -->
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="{% static 'images/3.png' %}" alt="Card image cap">
+                             <a href="{% url 'figures' %}"><img class="card-img-top img-fluid" src="{% static 'images/3.png' %}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Test de figuras</h5>
                                 <p class="card-text">Evalúa la percepción visual y la capacidad de reconocer formas específicas, especialmente dirigida a niños. Permite detectar posibles deficiencias o dificultades en la percepción de contornos y detalles.</p>
-                                <a href="javascript:void(0);" class="btn btn-blue waves-effect waves-light">Hacer Test</a>
+                                <a href="{% url 'figures' %}" class="btn btn-blue waves-effect waves-light">Hacer Test</a>
                             </div>
                         </div>
                     </div><!-- end col -->
@@ -103,11 +103,11 @@
                     <div class="col-lg-6 col-xl-3">
                         <!-- Simple card -->
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="{% static 'images/4.png' %}" alt="Card image cap">
+                            <a href="{% url 'color-vision' %}"><img class="card-img-top img-fluid" src="{% static 'images/4.png' %}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Test de visión de colores</h5>
                                 <p class="card-text">Evaluación que emplea una serie de placas con patrones de colores ocultos así examina la capacidad del paciente para distinguir diferentes tonalidades. Ayuda a detectar trastornos del color, como la discromatopsia.</p>
-                                <a href="javascript:void(0);" class="btn btn-blue waves-effect waves-light">Hacer Test</a>
+                                <a href="{% url 'color-vision' %}" class="btn btn-blue waves-effect waves-light">Hacer Test</a>
                             </div>
                         </div>
                     </div><!-- end col -->
