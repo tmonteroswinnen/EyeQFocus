@@ -81,7 +81,7 @@
     var element = document.getElementById(elementId);
     if (!document.fullscreenElement) {
         if (element.getAttribute('src') === '{% static 'images/placeholder.png' %}') {
-            element.setAttribute('src', '{% static 'images/red-green.png' %}');
+            element.setAttribute('src', '{% static 'images/figures.jpg' %}');
         }
         element.requestFullscreen().catch(err => {
             console.log(err);
